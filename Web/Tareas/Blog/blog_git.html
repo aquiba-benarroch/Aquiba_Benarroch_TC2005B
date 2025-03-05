@@ -3,74 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/blog_css.css">
+    <link rel="stylesheet" href="../css/blog_git_css.css">
     <title>Git y GitHub</title>
 </head>
 <body>
-    <h1>Git y GitHub</h1>
-    <section> 
-        <h2>Que significa Git y GitHub?</h2>
+    <header> 
+        <h1>Git y GitHub</h1>
+        <nav>
+            <a href="blog.html">Inicio</a>
+            <a href="blog_terminal.html">Terminal</a>
+            <a href="blog_css.html">CSS</a>
+        </nav>
+    </header>
+    <div class="titulo"> 
+        <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1620225137412/xCsadQY1f.jpeg">
+    </div>
+    <main>
+        <div>
+            <p>
+                Git es un <em> <strong> software de control de versiones</strong> </em> que nos permite registrar los cambios hechos a archivos de computadora. 
+                Un sistema de control de versiones registra los cambios a un archivo, o un conjunto de archivos a lo largo del tiempo, de manera que se puedan recuperar ciertas versiones posteriormente. 
+                Git hace esto a través de repositorios (almacenamiento virtual del proyecto).
+            </p>
+        </div>
+        <div> 
+            <img src="https://www.gitkraken.com/wp-content/uploads/2021/07/GitBashLogo.jpg" alt="Git Logo">
+        </div>
+    </main>
 
-        <h3>Git</h3>
-        <section> 
-            <img src="https://www.gitkraken.com/wp-content/uploads/2021/07/GitBashLogo.jpg">
-        </section>
-        <p>
-            Git es un <em> <strong> software de control de versiones</strong> </em> que nos permite registrar los cambios hechos a archivos de computadora. 
-            Un sistema de control de versiones registra los cambios a un archivo, o un conjunto de archivos a lo largo del tiempo, de manera que se puedan recuperar ciertas versiones posteriormente. 
-            Git hace esto a través de repositorios (almacenamiento virtual del proyecto).
-    </section>
-
-    <section> 
-        <h3>GitHub</h3>
-        <section> 
+    <main> 
+        <div>
+            <p>
+                GitHub es una <em><strong> plataforma web </strong></em> que permite almacenar los repositorios de una manera remota, 
+                con el fin de colaborar y coordinar los avances de un proyecto que pertenece a un equipo de trabajo.
+            </p>
+                Algunas de las ventajas de usar GitHub son:
+                <ul>
+                    <li>Facilita la colaboración entre los miembros de un equipo de trabajo.</li>
+                    <li>Permite llevar un registro de los cambios hechos a un proyecto.</li>
+                    <li>Facilita la revisión de código.</li>
+                    <li>Permite la integración continua.</li>
+                    <li>Facilita la revisión de código.</li>
+                </ul>
+                El flujo de trabajo en GitHub es el siguiente:
+                <ol>
+                    <li>Se crea un repositorio en GitHub.</li>
+                    <li>Se clona el repositorio en la computadora local.</li>
+                    <li>Se confirman los cambios</li>
+                    <li>Se confirman los cambios
+                    <li>Se envían los cambios al repositorio remoto.</li>
+                </ol>
+            <p>
+                Es de suma importancia mencionar que <strong> cunado se trabaja en equipo el proceso es similar, pero se deben seguir ciertas reglas para evitar conflictos.</strong>
+                    El flujo de trabajo cuando eres parte de un equipo es asi:
+                </p>
+                El flujo de trabajo cuando eres parte de un equipo es asi: 
+                <ol>
+                    <li>Se crea un repositorio en GitHub.</li>
+                    <li>Se clona el repositorio en la computadora local.</li>
+                    <li>Se crean ramas para trabajar en los cambios.</li>
+                    <li>Se hacen cambios en los archivos.</li>
+                    <li>Se confirman los cambios
+                    <li>Se envían los cambios al repositorio remoto.</li>
+                    <li>Se hace un pull request para revisar los cambios.</li>
+                    <li>Se hace un merge para unir los cambios al repositorio principal.</li>
+                </ol>
+            </p>
+        </div>
+        <div> 
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-PpcahB_qopQ-45P_tA1MjWGzjZnQSo8Gsg&s">
-        </section>
-        <p>
-            GitHub es una <em><strong> plataforma web </strong></em> que permite almacenar los repositorios de una manera remota, 
-            con el fin de colaborar y coordinar los avances de un proyecto que pertenece a un equipo de trabajo.
-        </p>
-        <p>
-            Algunas de las ventajas de usar GitHub son:
-            <ul>
-                <li>Facilita la colaboración entre los miembros de un equipo de trabajo.</li>
-                <li>Permite llevar un registro de los cambios hechos a un proyecto.</li>
-                <li>Facilita la revisión de código.</li>
-                <li>Permite la integración continua.</li>
-                <li>Facilita la revisión de código.</li>
-            </ul>
-        </p>
-        <p>
-            El flujo de trabajo en GitHub es el siguiente:
-            <ol>
-                <li>Se crea un repositorio en GitHub.</li>
-                <li>Se clona el repositorio en la computadora local.</li>
-                <li>Se hacen cambios en los archivos.</li>
-                <li>Se confirman los cambios
-                <li>Se envían los cambios al repositorio remoto.</li>
-            </ol>
-        </p>
-        <p>
-            Es de suma importancia mencionar que <strong> cunado se trabaja en equipo el proceso es similar, pero se deben seguir ciertas reglas para evitar conflictos.</strong>
-            <br>
-            El flujo de trabajo cuando eres parte de un equipo es asi: 
-            <ol>
-                <li>Se crea un repositorio en GitHub.</li>
-                <li>Se clona el repositorio en la computadora local.</li>
-                <li>Se crean ramas para trabajar en los cambios.</li>
-                <li>Se hacen cambios en los archivos.</li>
-                <li>Se confirman los cambios
-                <li>Se envían los cambios al repositorio remoto.</li>
-                <li>Se hace un pull request para revisar los cambios.</li>
-                <li>Se hace un merge para unir los cambios al repositorio principal.</li>
-            </ol>
-        </p>
-    </section>
+        </div>
+    </main>
     <section>
         <h2>Comandos principales</h2>
         <p>
             Algunos de los comandos principales de Git son:
         </p>
-            <table border="10">
+    </section>
+            <table>
                 <tr>
                     <th>Comando</th>
                     <th>Descripcion</th>
@@ -131,9 +142,12 @@
                     <td>Este comando se utiliza para eliminar una rama del repositorio remoto.</td>
                 </tr>
             </table>
-    </section>        
-        <p> Para regresar al inicio presiona el link.</p>
-        <a href="blog.html">Inicio</a>
-    </section>
+    <footer>
+        <p>
+            Gracias por visitar mi blog. 
+            <br>
+            Aquiba Benarroch
+        </p>
+    </footer>
 </body>
 </html>

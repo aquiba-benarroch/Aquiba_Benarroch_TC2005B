@@ -1,0 +1,67 @@
+body{
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    background-color: rgb(77, 77, 77);
+    color: white
+}
+
+header nav a{
+    margin: 18.72px;
+    padding: 0px 1px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: orange;
+    padding: 100px;
+}
+
+#subscribeSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(49, 73, 81);
+    color: white;
+    padding: 10px;
+}
+
+#subscribeSection button{
+    color: white;
+    background-color: darkorange;
+}
+
+#subscribeSection form{
+    margin: 16px;
+}
+
+#imageSection {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#imageSection div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(49, 73, 81);
+    color: white;
+    padding: 20px;
+}
