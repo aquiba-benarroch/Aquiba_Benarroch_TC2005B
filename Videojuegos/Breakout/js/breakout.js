@@ -9,8 +9,8 @@ A01783710
 "Use strict"
 
 // Global variables
-const canvasWidth = 800;
-const canvasHeight = 600;
+const canvasWidth = 900;
+const canvasHeight = 700;
 
 let oldTime;
 const paddleVelocity = 0.5;
@@ -35,7 +35,7 @@ class Ball extends GameObject {
 
     initVelocity() {
         this.position = new Vec(canvasWidth / 2, canvasHeight / 2);
-        let angle = Math.random() * (Math.PI / 2) - (Math.PI / 4);
+        let angle = Math.random() * (Math.PI / 2) + (Math.PI / 4);
         this.velocity = new Vec(Math.cos(angle), Math.sin(angle)).times(initialSpeed);
     }
 
@@ -64,6 +64,13 @@ class Paddle extends GameObject {
     }
 }
 
+//Class for blocks
+class Block extends GameObject {
+    constructor(position, width, height, color, type) {
+        super(position, width, height, color, "block");
+    }
+}
+
 class Game {
     constructor(state) {
         this.state
@@ -87,7 +94,7 @@ class Game {
 //Ball
 const box = new Ball(new Vec(canvasWidth / 2, canvasHeight / 2), 20, 20, "white", new Vec(0, 0));
 //Paddle
-const paddle = new Paddle(new Vec(canvasWidth / 2, canvasHeight - 80), 200, 20, "white");
+const paddle = new Paddle(new Vec(canvasWidth / 2, canvasHeight - 80), 150, 20, "white");
 //Bars
 const topBar = new GameObject(new Vec(0, 0), canvasWidth, 20, "grey", "obstacle");
 const bottomBar = new GameObject(new Vec(0, canvasHeight - 20), canvasWidth, 20, "grey", "obstacle");
@@ -159,7 +166,7 @@ function drawScene(newTime) {
 
     //Draw liveScore
     liveScore.draw(ctx, `Lives: ${lives}`);
-    
+
     //Si se acaban las vidas
     if (lives == 0) {
         //Dibujar todo de nuevo
