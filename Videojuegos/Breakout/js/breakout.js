@@ -110,9 +110,9 @@ class PowerUp extends GameObject {
 
 //Objects to represent elements of the game
 //Ball
-const box = new Ball(new Vec(canvasWidth / 2, canvasHeight / 2), 20, 20, "white", new Vec(0, 0));
+const box = new Ball(new Vec(canvasWidth / 2 -10, canvasHeight / 2), 20, 20, "white", new Vec(0, 0));
 //Paddle
-const paddle = new Paddle(new Vec(canvasWidth / 2, canvasHeight - 80), 150, 20, "white");
+const paddle = new Paddle(new Vec(canvasWidth / 2 -75, canvasHeight - 80), 150, 20, "white");
 //Bars
 const topBar = new GameObject(new Vec(0, 0), canvasWidth, 20, "grey", "obstacle");
 const bottomBar = new GameObject(new Vec(0, canvasHeight - 20), canvasWidth, 20, "grey", "obstacle");
