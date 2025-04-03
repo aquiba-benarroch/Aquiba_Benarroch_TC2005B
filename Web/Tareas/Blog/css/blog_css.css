@@ -18,6 +18,7 @@ header {
 nav {
     display: flex;
     gap: 20px;
+    transition: color 0.3s ease-in-out;
 }
 
 nav a {
@@ -25,6 +26,11 @@ nav a {
     color: white; 
     font-size: 1.2em; 
     font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #f3ce12;
 }
 
 main {

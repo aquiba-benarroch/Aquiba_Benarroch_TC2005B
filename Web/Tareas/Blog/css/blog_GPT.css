@@ -1,0 +1,76 @@
+/* =========================
+   Basado en el estilo dado
+   ========================= */
+
+/* Fondo y texto principal */
+body {
+    color: black;
+    background-color: #c0c1c2;
+    margin: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    /* Mantener estilo tipográfico */
+}
+
+
+/* Secciones de preguntas y respuestas */
+section {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-left: 10px solid #f39c12;
+    /* Consistente con tu estilo anterior */
+    border-right: 10px solid #f39c12;
+    text-align: justify;
+}
+
+/* Espaciado entre secciones consecutivas */
+section+section {
+    margin-top: 0;
+}
+
+/* Encabezados dentro de las secciones */
+h2 {
+    color: #1f3b4d;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+h3 {
+    color: #f39c12;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+/* Párrafos y listas */
+p,
+ul {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+}
+
+/* Destacar código en línea */
+code {
+    background-color: #f5f2f0;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+/* Bloques de código */
+pre {
+    background-color: #f5f2f0;
+    padding: 10px;
+    border-radius: 6px;
+    overflow: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Enlaces */
+a {
+    color: #1f3b4d;
+    text-decoration: underline;
+}

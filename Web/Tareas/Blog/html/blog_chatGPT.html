@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/blog_css.css">
+    <link rel="stylesheet" href="../css/blog_GPT.css">
+    <title>Eventos y DOM y ChatGPT</title>
+</head>
+<body>
+    <header>
+        <h1>Eventos y DOM y ChatGPT</h1>
+        <nav>
+            <a href="blog_git.html">Git</a>
+            <a href="blog_terminal.html">Terminal</a>
+            <a href="blog_css.html">CSS</a>
+            <a href="blog.html">Inicio</a>
+        </nav>
+    </header>
+  
+  <!-- ===================== 1. ¿Qué es el DOM? ===================== -->
+
+  <section>
+    <h2>Asistentes usados</h2>
+    <p>En esta práctica se utilizaron herramientas basadas en inteligencia artificial:</p>
+    <div style="display: flex; gap: 40px; align-items: center;">
+      <div style="text-align: center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="Logo ChatGPT" width="80">
+        <p><strong>ChatGPT</strong></p>
+      </div>
+      <div style="text-align: center;">
+        <img src="https://images.seeklogo.com/logo-png/50/1/microsoft-365-copilot-logo-png_seeklogo-501781.png" alt="Logo Copilot" width="80">
+        <p><strong>GitHub Copilot</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>1. ¿Qué es el DOM?</h2>
+    <h3>Respuesta ChatGPT:</h3>
+    <p>
+      El <strong>DOM (Document Object Model)</strong> es una interfaz de programación para los documentos HTML y XML. 
+      Básicamente, representa la estructura de la página web como una jerarquía de nodos (etiquetas, texto, atributos, etc.). 
+      Gracias al DOM, los lenguajes de programación como JavaScript pueden acceder y manipular el contenido, la estructura y los estilos 
+      de la página de forma dinámica.
+    </p>
+    <h3>Respuesta Copilot:</h3>
+    <p>
+      El DOM (Document Object Model) es una representación estructurada del documento HTML o XML que permite a los lenguajes de programación, 
+      como JavaScript, interactuar con el contenido, estructura y estilo de una página web. Es una interfaz que convierte el documento 
+      en un árbol de nodos.
+    </p>
+    <p><em>¿Es verdad?</em> Sí, ambas respuestas describen acertadamente el DOM.</p>
+    <p>Fuente que valida: 
+      <a href="https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model" target="_blank">
+        MDN - Document Object Model
+      </a>
+    </p>
+  </section>
+
+  <!-- ===================== 2. ¿Qué es un nodo? ===================== -->
+  <section>
+    <h2>2. ¿Qué es un nodo?</h2>
+    <h3>Respuesta ChatGPT:</h3>
+    <p>
+      Un <strong>nodo</strong> es la unidad más básica dentro del DOM. Cada elemento HTML, cada texto dentro de un elemento, 
+      cada atributo, cada comentario y hasta el propio documento en sí mismo están representados como nodos en la estructura 
+      jerárquica del DOM.
+    </p>
+    <h3>Respuesta Copilot:</h3>
+    <p>
+      Un nodo es la unidad básica del DOM. Puede representar un elemento HTML, un atributo, un texto, un comentario o incluso 
+      el propio documento. Por ejemplo, un &lt;div&gt; o un texto dentro de un párrafo son nodos.
+    </p>
+    <p><em>¿Es verdad?</em> Sí, ambas explicaciones son correctas.</p>
+    <p>Fuente que valida: 
+      <a href="https://developer.mozilla.org/es/docs/Web/API/Node" target="_blank">
+        MDN - Node
+      </a>
+    </p>
+  </section>
+
+  <!-- ===================== 3. ¿Cómo se accede a un elemento del DOM? ===================== -->
+  <section>
+    <h2>3. ¿Cómo se accede a un elemento del DOM?</h2>
+    <h3>Respuesta ChatGPT:</h3>
+    <p>
+      Para acceder a un elemento del DOM en JavaScript, se suelen usar los siguientes métodos:
+    </p>
+    <ul>
+      <li><code>document.getElementById("miId")</code></li>
+      <li><code>document.getElementsByClassName("miClase")</code></li>
+      <li><code>document.getElementsByTagName("p")</code></li>
+      <li><code>document.querySelector("selectorCSS")</code></li>
+      <li><code>document.querySelectorAll("selectorCSS")</code></li>
+    </ul>
+    <h3>Respuesta Copilot:</h3>
+    <p>
+      Puedes acceder a un elemento del DOM utilizando métodos como:
+    </p>
+    <ul>
+      <li><code>document.getElementById("id")</code></li>
+      <li><code>document.getElementsByClassName("class")</code></li>
+      <li><code>document.getElementsByTagName("tag")</code></li>
+      <li><code>document.querySelector("selector")</code></li>
+      <li><code>document.querySelectorAll("selector")</code></li>
+    </ul>
+    <p><em>¿Es verdad?</em> Sí, las listas de métodos coinciden y son correctas.</p>
+    <p>Fuente que valida:
+      <a href="https://developer.mozilla.org/es/docs/Web/API/Document" target="_blank">
+        MDN - Document
+      </a>
+    </p>
+  </section>
+
+  <!-- ===================== 4. ¿Cómo se modifica un elemento del DOM? ===================== -->
+  <section>
+    <h2>4. ¿Cómo se modifica un elemento del DOM?</h2>
+    <h3>Respuesta ChatGPT:</h3>
+    <p>Algunas maneras de modificar un elemento del DOM incluyen:</p>
+    <ul>
+      <li><strong>Modificar el contenido:</strong> <code>element.innerHTML</code> o <code>element.textContent</code></li>
+      <li><strong>Modificar atributos:</strong> <code>element.setAttribute()</code> o <code>element.id = "nuevoID"</code></li>
+      <li><strong>Modificar estilos:</strong> <code>element.style.propiedadCSS = "valor"</code></li>
+      <li><strong>Crear o eliminar elementos:</strong> <code>document.createElement()</code>, <code>element.appendChild()</code>, <code>element.removeChild()</code></li>
+    </ul>
+    <h3>Respuesta Copilot:</h3>
+    <p>
+      Puedes modificar un elemento del DOM de varias maneras:
+    </p>
+    <ul>
+      <li>Cambiar su contenido: <code>element.textContent = "Nuevo texto";</code></li>
+      <li>Cambiar su HTML interno: <code>element.innerHTML = "&lt;b&gt;Nuevo contenido&lt;/b&gt;";</code></li>
+      <li>Cambiar atributos: <code>element.setAttribute("atributo", "valor");</code></li>
+      <li>Cambiar estilos: <code>element.style.color = "red";</code></li>
+    </ul>
+    <p><em>¿Es verdad?</em> Sí, ambas descripciones coinciden.</p>
+    <p>Fuente que valida: 
+      <a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents" target="_blank">
+        MDN - Manipulación del DOM
+      </a>
+    </p>
+  </section>
+
+  <!-- ===================== 5. ¿Cuál es la diferencia entre getElementBy* y querySelector*? ===================== -->
+  <section>
+    <h2>5. ¿Cuál es la diferencia entre getElementBy* y querySelector*?</h2>
+    <h3>Respuesta ChatGPT:</h3>
+    <ul>
+      <li><strong>getElementBy*</strong> (ej. <code>getElementById</code>, <code>getElementsByClassName</code>) retorna colecciones 
+        vivas o un único elemento, según busque por <em>id</em>, clase o etiqueta.</li>
+      <li><strong>querySelector*</strong> (ej. <code>querySelector</code>, <code>querySelectorAll</code>) acepta cualquier 
+        <em>selector CSS</em>, retornando el primero o todos los elementos que coincidan. <code>querySelectorAll</code> retorna 
+        un <em>NodeList estático</em>.</li>
+    </ul>
+    <h3>Respuesta Copilot:</h3>
+    <p>
+      <strong>getElementBy*</strong> (como getElementById o getElementsByClassName) devuelve elementos basados en su ID, clase 
+      o etiqueta. Los métodos getElementsBy* devuelven colecciones HTML (listas vivas). 
+      <br>
+      <strong>querySelector*</strong> utiliza selectores CSS para buscar elementos. querySelector devuelve el primer elemento 
+      que coincide, mientras que querySelectorAll devuelve una lista estática de todos los elementos coincidentes.
+    </p>
+    <p><em>¿Es verdad?</em> Sí, coinciden los conceptos.</p>
+    <p>Fuente que valida: 
+      <a href="https://developer.mozilla.org/es/docs/Web/API/Document/querySelector" target="_blank">
+        MDN - Document.querySelector
+      </a>
+    </p>
+  </section>
+
+  <!-- ===================== 6. ¿Qué es un evento? ===================== -->
+  <section>
+    <h2>6. ¿Qué es un evento?</h2>
+    <h3>Respuesta ChatGPT:</h3>
+    <p>
+      Un <strong>evento</strong> es una acción o suceso que ocurre en la página (clic, pulsación de tecla, carga, etc.) 
+      y que puede ser detectado por JavaScript para ejecutar código en respuesta.
+    </p>
+    <h3>Respuesta Copilot:</h3>
+    <p>
+      Un evento es cualquier interacción o cambio que ocurre en la página web, como un clic, el movimiento del mouse, 
+      la carga de la página, la escritura en un campo de texto, entre otros.
+    </p>
+    <p><em>¿Es verdad?</em> Sí, ambas definiciones coinciden.</p>
+    <p>Fuente que valida: 
+      <a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Events" target="_blank">
+        MDN - Introducción a los eventos
+      </a>
+    </p>
+  </section>
+
+  <!-- ===================== 7. ¿Qué es un listener? ===================== -->
+  <section>
+    <h2>7. ¿Qué es un listener?</h2>
+    <h3>Respuesta ChatGPT:</h3>
+    <p>
+      Un <strong>listener</strong> (o manejador de eventos) es una función que se asocia a un evento específico y se 
+      ejecuta cada vez que ese evento se dispara. Se agrega con <code>addEventListener</code>.
+    </p>
+    <h3>Respuesta Copilot:</h3>
+    <p>
+      Un listener (o event listener) es una función que "escucha" un evento específico en un elemento del DOM y ejecuta 
+      una acción cuando ese evento ocurre. Se agrega con el método <code>addEventListener</code>.
+    </p>
+    <p><em>¿Es verdad?</em> Sí, describen el mismo concepto.</p>
+    <p>Fuente que valida:
+      <a href="https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener" target="_blank">
+        MDN - addEventListener
+      </a>
+    </p>
+    <p>Ejemplo de código usando un listener:</p>
+    <pre>
+&lt;button id="myBtn"&gt;Haz clic en mí&lt;/button&gt;
+&lt;script&gt;
+  const myBtn = document.getElementById("myBtn");
+  myBtn.addEventListener("click", function(event) {
+    alert("¡Botón presionado!");
+    console.log("Objeto de evento:", event);
+  });
+&lt;/script&gt;
+    </pre>
+  </section>
+
+  <!-- ===================== 8. ¿Qué es un callback? ===================== -->
+  <section>
+    <h2>8. ¿Qué es un callback?</h2>
+    <h3>Respuesta ChatGPT:</h3>
+    <p>
+      Un <strong>callback</strong> es una función que se pasa como argumento a otra función y que se ejecuta posteriormente 
+      dentro de esa función. En el contexto de eventos, se usa como la función que se ejecutará cuando el evento ocurra.
+    </p>
+    <h3>Respuesta Copilot:</h3>
+    <p>
+      Un callback es una función que se pasa como argumento a otra función y se ejecuta después de que ocurre un evento o 
+      se completa una operación.
+    </p>
+    <p><em>¿Es verdad?</em> Sí, ambas definiciones son equivalentes.</p>
+    <p>Fuente que valida:
+      <a href="https://developer.mozilla.org/es/docs/Glossary/Callback_function" target="_blank">
+        MDN - Funciones callback
+      </a>
+    </p>
+  </section>
+
+  <!-- ===================== 9. ¿Qué es un objeto de evento? ===================== -->
+  <section>
+    <h2>9. ¿Qué es un objeto de evento?</h2>
+    <h3>Respuesta ChatGPT:</h3>
+    <p>
+      El <strong>objeto de evento</strong> es un objeto que se pasa automáticamente a la función callback cuando se dispara 
+      un evento. Contiene información relacionada con el evento, como el tipo de evento, el elemento objetivo, posición del 
+      ratón, teclas presionadas, etc.
+    </p>
+    <h3>Respuesta Copilot:</h3>
+    <p>
+      Es un objeto que contiene información sobre un evento que ocurrió, como el tipo de evento, el elemento que lo disparó, 
+      las coordenadas del mouse, teclas presionadas, etc. Se pasa automáticamente como argumento a los callbacks de eventos.
+    </p>
+    <p><em>¿Es verdad?</em> Sí, es la misma definición.</p>
+    <p>Fuente que valida:
+      <a href="https://developer.mozilla.org/es/docs/Web/API/Event" target="_blank">
+        MDN - Event
+      </a>
+    </p>
+  </section>
+
+  <!-- ================== EJERCICIO 1: Posición del mouse ================== -->
+  <section>
+    <h2>Ejercicio 1: Posición del mouse</h2>
+    <p id="mousePosition">Posición del mouse: </p>
+  </section>
+  
+  <!-- ================== EJERCICIO 2: Formulario con nombre ================== -->
+  <section>
+    <h2>Ejercicio 2: Formulario</h2>
+    <form id="form1">
+      <input id="form-fname" type="text" placeholder="Nombre">
+      <input id="form-lname" type="text" placeholder="Apellido">
+      <button id="form1-submit" type="submit">Mostrar nombre completo</button>
+    </form>
+  </section>
+  
+  <!-- ================== EJERCICIO 3: Insertar filas/columnas ================== -->
+  <section>
+    <h2>Ejercicio 3: Tabla dinámica</h2>
+    <table id="sampleTable" border="1">
+      <tr>
+        <td>Row1 cell1</td>
+        <td>Row1 cell2</td>
+      </tr>
+      <tr>
+        <td>Row2 cell1</td>
+        <td>Row2 cell2</td>
+      </tr>
+    </table>
+    <br>
+    <button id="btn-insert-r">Insertar fila</button>
+    <button id="btn-insert-c">Insertar columna</button>
+  </section>
+  
+  <!-- ================== EJERCICIO 4: Modificar celda ================== -->
+  <section>
+    <h2>Ejercicio 4: Modificar celda de tabla</h2>
+    <table id="myTable" border="1">
+      <tr>
+        <td>Row1 cell1</td>
+        <td>Row1 cell2</td>
+        <td>Row1 cell3</td>
+      </tr>
+      <tr>
+        <td>Row2 cell1</td>
+        <td>Row2 cell2</td>
+        <td>Row2 cell3</td>
+      </tr>
+      <tr>
+        <td>Row3 cell1</td>
+        <td>Row3 cell2</td>
+        <td>Row3 cell3</td>
+      </tr>
+    </table>
+    <br>
+    <input id="rowIndex" type="number" placeholder="Fila">
+    <input id="colIndex" type="number" placeholder="Columna">
+    <input id="newValue" type="text" placeholder="Nuevo valor">
+    <button id="btn-change">Cambiar contenido</button>
+  </section>
+  
+  <!-- ================== EJERCICIO 5: Lista de colores ================== -->
+  <section>
+    <h2>Ejercicio 5: Lista de colores</h2>
+    <select id="colorSelect"></select>
+    <br><br>
+    <button id="btn-add-color">Agregar color</button>
+    <button id="btn-rmv-color">Eliminar color</button>
+  </section>
+  
+  <!-- ================== EJERCICIO 6: Imagen de gato dinámica ================== -->
+  <section>
+    <h2>Ejercicio 6: Imagen dinámica</h2>
+    <img id="imagenGato" src="https://placekitten.com/300/300" alt="Gatito lindo" style="border-radius: 10px;">
+  </section>
+
+  
+  <script type="module" src="../js/eventos_dom.js"></script>
+
+  <section>
+    <h2>Conclusión</h2>
+  
+    <h3>Experiencia general</h3>
+    <p>
+      Esta actividad me permitió combinar teoría y práctica sobre el DOM y los eventos en JavaScript, lo cual fortaleció
+      mi comprensión del funcionamiento interno de las páginas web.
+      Pude aplicar de manera inmediata los conceptos aprendidos en ejercicios reales, viendo cómo JavaScript puede
+      manipular los elementos de una página para volverla interactiva.
+      Además, usar inteligencia artificial como ChatGPT y Copilot me ayudó a resolver dudas rápidamente y mejorar mi
+      productividad sin depender exclusivamente de buscar documentación.
+    </p>
+  
+    <h3>¿Cuándo y para qué usarías ChatGPT y cuándo Copilot?</h3>
+    <p>
+      <strong>Usaría ChatGPT</strong> cuando necesito entender un concepto desde cero, repasar teoría, o cuando tengo una
+      pregunta compleja que requiere una explicación detallada,
+      ejemplos y contexto. ChatGPT me permite mantener una conversación sobre lo que quiero lograr, corregir errores y
+      tomar decisiones informadas sobre cómo implementar una solución.
+    </p>
+    <p>
+      <strong>Usaría Copilot</strong> cuando ya estoy dentro de un archivo de código y quiero acelerar la escritura. Es
+      útil para autocompletar funciones, escribir estructuras repetitivas
+      como bucles o condicionales, y sugerirme código que se adapte a lo que estoy escribiendo. Es ideal para programar
+      más rápido cuando ya tienes claro qué vas a hacer.
+    </p>
+  
+    <h3>Ventajas de usar AI para programar</h3>
+    <ul>
+      <li>Acelera el desarrollo de código.</li>
+      <li>Ayuda a aprender nuevas funciones y APIs.</li>
+      <li>Reduce errores comunes.</li>
+      <li>Proporciona asistencia instantánea sin salir del entorno de trabajo.</li>
+    </ul>
+  
+    <h3>Desventajas de usar AI para programar</h3>
+    <ul>
+      <li>Puede generar código sin contexto completo.</li>
+      <li>Podrías depender demasiado de la herramienta.</li>
+      <li>Puede sugerir soluciones incorrectas si no se revisan cuidadosamente.</li>
+      <li>Riesgo de no entender lo que el código realmente hace.</li>
+    </ul>
+  </section>
+
+</body>
+</html>
